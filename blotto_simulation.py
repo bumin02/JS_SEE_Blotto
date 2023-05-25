@@ -36,8 +36,8 @@ def get_scores(me, f):
 
             my_max_consec, opp_max_consec = max(my_max_consec_ls), max(opp_max_consec_ls)
 
-            # if my_max_consec == 1 or opp_max_consec == 1:
-            if my_max_consec == opp_max_consec:
+            if my_max_consec == 1 or opp_max_consec == 1:
+            # if my_max_consec == opp_max_consec:
                 my_max_consec = 0
                 opp_max_consec = 0
             else:
@@ -61,3 +61,4 @@ def get_scores(me, f):
         print("\nmy win rate: ", my_num_wins / total_games, "\n")
 
 get_scores(me, f)
+
